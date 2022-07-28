@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.svg" alt="" />
+    </header>
+
+    <!-- Main Style -->
+    <main>
+      <div class="container">
+        <div class="calc-wrap">
+          <!-- calc-left -->
+          <div class="calc-left">
+            <!-- Bill heading -->
+            <div class="calc-input">
+              <h5 class="input-title">Bill</h5>
+              <div class="form-input">
+                <i class="fas fa-dollar-sign fa-xs"></i>
+                <input
+                  id="form-input"
+                  type="number"
+                  aria-label="form-input"
+                  placeholder="0"
+                  min="0"
+                  max="9999999"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <!-- Select tip% -->
+            <div class="select-tip">
+              <h5 class="input-title">Select Tip %</h5>
+              <div class="tips">
+                <button class="tips-percentage tip1">5%</button>
+                <button class="tips-percentage tip2">10%</button>
+                <button class="tips-percentage tip3">15%</button>
+                <button class="tips-percentage tip4">20%</button>
+                <button class="tips-percentage tip5">25%</button>
+                <input
+                  class="input"
+                  type="tel"
+                  id="tips-percentage-custom"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+
+            <!-- Number of People -->
+            <div class="calc-input calc-input2">
+              <h5 class="input-title">Number of People</h5>
+              <div class="form-input">
+                <i class="fas fa-user fa-xs"></i>
+                <input
+                  id="form-input"
+                  type="number"
+                  aria-label="form-input"
+                  placeholder="0"
+                  min="0"
+                  max="9999999"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Calc-right -->
+          <div class="calc-right">
+            <div class="calc-tip">
+              <!-- Tip Amount -->
+              <div class="tip">
+                <div class="tip-info">
+                  <h3 class="tip-title">Tip Amount</h3>
+                  <span class="tip-span">/ person</span>
+                </div>
+
+                <h1 class="tip-amount">$0.00</h1>
+              </div>
+
+              <!-- Total -->
+              <div class="tip">
+                <div class="tip-info">
+                  <h3 class="tip-title">Total</h3>
+                  <span class="tip-span">/ person</span>
+                </div>
+
+                <h1 class="tip-amount">$0.00</h1>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="tip-action">
+              <button class="btn" type="reset" id="resetButton">RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
