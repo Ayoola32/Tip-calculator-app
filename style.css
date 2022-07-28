@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Open+Sans:wght@300&family=Overpass:wght@400;700&family=Space+Mono:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--light-grayish-cyan);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 40px;
+}
+
+.container {
+  width: auto;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 20px;
+}
+
+.calc-wrap {
+  display: flex;
+}
+
+.calc-left,
+.calc-right {
+  width: 50%;
+}
+
+/*  */
+/* LEFT HAND SIDE */
+/*  */
+.calc-left {
+  padding: 10px 10px 0 15px;
+}
+
+.calc-input {
+  margin-bottom: 20px;
+}
+.input-title {
+  color: var(--very-dark-cyan);
+  margin-bottom: 3px;
+}
+
+.form-input {
+  position: relative;
+}
+
+.form-input i {
+  position: absolute;
+  color: var(--grayish-cyan);
+  padding: 5px;
+  top: 13px;
+  left: 10px;
+}
+
+input {
+  text-align: end;
+  padding: 8px 10px;
+  border: none;
+  background-color: var(--light-grayish-cyan);
+  width: 90%;
+  font-size: 17px;
+  font-weight: 900;
+  border-radius: 3px;
+  color: var(--very-dark-cyan);
+  outline: none;
+}
+
+.calc-wrap input:focus {
+  border: var(--strong-cyan) 2px solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.select-tip {
+  margin: 30px 0 4rem 0;
+}
+
+.tips-percentage {
+  padding: 8px 25px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tips-percentage:nth-child(1) {
+  padding: 8px 30px;
+}
+
+.tips .input {
+  text-align: center;
+  padding: 9px 5px;
+  border: none;
+  width: 29%;
+}
+
+.tips-percentage:hover {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tips-percentage:focus {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+/*  */
+/* RIGHT HAND SIDE */
+/*  */
+
+.calc-right {
+  background-color: var(--very-dark-cyan);
+  padding: 40px 20px 10px 20px;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.calc-tip {
+  margin-bottom: 5rem;
+}
+
+.tip {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tip-info .tip-title {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.tip-info .tip-span {
+  color: var(--grayish-cyan);
+  font-size: 12px;
+}
+
+.tip .tip-amount {
+  color: var(--strong-cyan);
+  font-size: 40px;
+}
+
+.tip-action .btn {
+  width: 100%;
+  padding: 13px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(183, 100%, 21%);
+  cursor: pointer;
+  color: var(--dark-grayish-cyan);
+  font-weight: 900;
+  font-size: 16px;
+  margin-top: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+@media (max-width: 685px) {
+  .container {
+    max-width: 400px;
+    min-height: 700px;
+  }
+
+  header {
+    margin-top: 10rem;
+  }
+
+  .calc-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .form-input input {
+    width: 330px;
+  }
+
+  .select-tip {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tips {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tips-percentage {
+    /* width: 100%; */
+    padding: 10px 60px;
+  }
+
+  .tip1 {
+    margin-right: 20px;
+  }
+
+  .tip3 {
+    margin-right: 20px;
+  }
+
+  .tip5 {
+    margin-right: 20px;
+  }
+
+  .tips .input {
+    text-align: center;
+    padding: 0 0;
+    border: none;
+    width: 100%;
+  }
+
+  .tips input {
+    padding: 2px 5px;
+  }
+
+  .calc-left,
+  .calc-right {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+/* All praises to Allah, more knowledge */
