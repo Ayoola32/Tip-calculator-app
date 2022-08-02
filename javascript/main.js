@@ -77,5 +77,4 @@ function applyActiveClass(innerTextPect) {
 
 resetBtn.addEventListener("click", (e) => {
   billInput.value = "";
-  noOfPeople.innerText = "0";
 });
