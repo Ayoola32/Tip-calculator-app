@@ -1,4 +1,6 @@
-// alert("Thank you for visiting my project");
+alert(
+  "Thank you for visiting my project, if you're viewing this, kindly help me with my javascript, cos i'm finding it difficult to assign my reset btn to all the input variables "
+);
 
 // Variable declaration
 let billInput = document.querySelector("#bill-input");
