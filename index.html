@@ -21,7 +21,6 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
@@ -41,7 +40,7 @@
               <div class="form-input">
                 <i class="fas fa-dollar-sign fa-xs"></i>
                 <input
-                  id="form-input"
+                  id="bill-input"
                   type="number"
                   aria-label="form-input"
                   placeholder="0"
@@ -76,7 +75,7 @@
               <div class="form-input">
                 <i class="fas fa-user fa-xs"></i>
                 <input
-                  id="form-input"
+                  id="people-input"
                   type="number"
                   aria-label="form-input"
                   placeholder="0"
@@ -98,7 +97,7 @@
                   <span class="tip-span">/ person</span>
                 </div>
 
-                <h1 class="tip-amount">$0.00</h1>
+                <h1 class="tip-amount tip-amount-person">$0.00</h1>
               </div>
 
               <!-- Total -->
@@ -108,17 +107,19 @@
                   <span class="tip-span">/ person</span>
                 </div>
 
-                <h1 class="tip-amount">$0.00</h1>
+                <h1 class="tip-amount tip-total-person">$0.00</h1>
               </div>
             </div>
 
             <!--  -->
             <div class="tip-action">
-              <button class="btn" type="reset" id="resetButton">RESET</button>
+              <button class="btn" type="reset" id="resetBtn">RESET</button>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="./javascript/main.js"></script>
   </body>
 </html>
