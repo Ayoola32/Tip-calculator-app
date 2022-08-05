@@ -30,6 +30,12 @@ header {
   padding: 40px;
 }
 
+/* fun welcome design */
+#js-welcome {
+  margin-left: 35px;
+  color: var(--very-dark-cyan);
+}
+
 .container {
   width: auto;
   background-color: var(--white);
@@ -192,6 +198,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 685px) {
   .container {
+    margin: 0 0 40px 0;
     max-width: 400px;
     min-height: 700px;
   }
