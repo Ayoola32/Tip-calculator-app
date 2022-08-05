@@ -27,8 +27,8 @@ A Frontend Mentor project that uses HTML, CSS and its properties to design a Tip
 
 ### Links
 
-- Solution URL: [link](https://your-solution-url.com)
-- Live Site URL: [link](https://your-live-site-url.com)
+- Solution URL: [link](https://github.com/Ayoola32/Tip-calculator-app/)
+- Live Site URL: [link](https://ayoola32.github.io/Tip-calculator-app/)
 
 ### Built with
 
