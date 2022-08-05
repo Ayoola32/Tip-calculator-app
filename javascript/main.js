@@ -1,6 +1,6 @@
-alert(
-  "Thank you for visiting my project, if you're viewing this, kindly help me with my javascript, cos i'm finding it difficult to assign my reset btn to all the input variables "
-);
+// alert(
+//   "Thank you for visiting my project, if you're viewing this, kindly help me with my javascript, cos i'm finding it difficult to assign my reset btn to all the input variables "
+// );
 
 // Variable declaration
 let billInput = document.querySelector("#bill-input");
@@ -11,6 +11,15 @@ let tipAmountPerPersonEl = document.querySelector(".tip-amount-person");
 let totalAmountPerPersonEl = document.querySelector(".tip-total-person");
 let resetBtn = document.querySelector("#resetBtn");
 
+// fun
+// let headingEL = document.querySelector("#js-welcome");
+// function welcome() {
+//   const name = prompt("Enter your Username!");
+//   alert(`Welcome ${name}, to my Tips Calculator`);
+//   headingEL.innerText = `Welcome ${name}`;
+// }
+// welcome();
+
 // variable that stores data
 let billAmount = 0;
 let noOfPple = 0;
@@ -18,13 +27,12 @@ let customPercentage = 0;
 let tipPercentage = 0;
 
 // Event Listener
-//
 billInput.addEventListener("keyup", (e) => {
   billAmount = Number(e.target.value);
   calculateTip();
 });
 
-noOfPeople = addEventListener("keyup", (e) => {
+noOfPeople.addEventListener("keyup", (e) => {
   noOfPple = Number(e.target.value);
   calculateTip();
 });
@@ -77,6 +85,16 @@ function applyActiveClass(innerTextPect) {
   });
 }
 
+// resetBtn.addEventListener("click", (e) => {
+//   billInput.value = "";
+// });
 resetBtn.addEventListener("click", (e) => {
-  billInput.value = "";
+  billInput.value = "input-value";
+  noOfPeople.value = null;
+  totalAmountPerPersonEl.textContent = tipAmountPerPersonEl.textContent =
+    "$0.00";
+
+  // tipPercentages = 0;
+  // tipAmountPerPersonEl.innerText = "$0.00"
+  // totalAmountPerPersonEl.innerText = "$0.00"
 });
